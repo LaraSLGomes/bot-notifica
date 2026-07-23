@@ -11,7 +11,7 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
-    raise ValueError("TELEGRAM_TOKEN ou CHAT_ID não foram encontrados no arquivo .env!")
+    raise ValueError("TELEGRAM_TOKEN ou CHAT_ID não foram encontrados no arquivo")
 
 URL_EVENTO = "https://www.ticketmaster.com.br/event/venda-geral-bts-world-tour-arirang-30-10"
 
@@ -55,13 +55,12 @@ def checar_status():
         return False
 
 async def main():
-    await notificar("bot de ingressos Iniciado!*\nMonitorando disponibilidade...")
+    await notificar("*bot de ingressos Iniciado!*\nMonitorando disponibilidade...")
     
     ja_notificou = False
 
     while True:
         tem_ingresso = checar_status()
-        
         if tem_ingresso and not ja_notificou:
             mensagem = (
                 "🚨 *INGRESSO DETECTADO!*\n\n"
