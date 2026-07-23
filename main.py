@@ -13,7 +13,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 if not TELEGRAM_TOKEN or not CHAT_ID:
     raise ValueError("TELEGRAM_TOKEN ou CHAT_ID não foram encontrados no arquivo .env!")
 
-URL_EVENTO = ""
+URL_EVENTO = "https://www.ticketmaster.com.br/event/venda-geral-bts-world-tour-arirang-30-10"
 
 HEADERS = {
     "User-Agent": (
