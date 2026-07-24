@@ -4,7 +4,7 @@ A lightweight Python script that monitors ticket availability for events on Tick
 
 ---
 
-## ✨ Features
+## Features
 
 - **Automated Monitoring:** Checks ticket availability at customizable time intervals.
 - **Instant Alerts:** Sends a Telegram notification with a direct link as soon as tickets are detected.
@@ -13,7 +13,7 @@ A lightweight Python script that monitors ticket availability for events on Tick
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Python 3.9+**
 - A **Telegram Bot Token** (obtained via [@BotFather](https://t.me/BotFather))
@@ -21,7 +21,7 @@ A lightweight Python script that monitors ticket availability for events on Tick
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 1. Create a `.env` file in the root directory of the project:
 
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🏃 Usage
+## Usage
 
 Run the bot script:
 
@@ -78,7 +78,7 @@ python main.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ├── .env                  # Environment variables (git-ignored)
@@ -91,6 +91,6 @@ python main.py
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is intended for personal and educational use only. Please respect Ticketmaster's terms of service and avoid setting aggressively low polling intervals to prevent rate limiting or IP blocks.
